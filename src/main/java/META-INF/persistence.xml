@@ -10,11 +10,25 @@
         <!--</properties>-->
     <!--</persistence-unit>-->
 
-    <persistence-unit name="ensam" >
+    <persistence-unit name="ensam" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>entities.User</class>
-        <class>entities.Car</class>
-        <class>entities.Student</class>
+
+        <!--<class>entities.User</class>-->
+        <!--<class>entities.Car</class>-->
+        <!--<class>entities.Student</class>-->
+        <!--<class>entities.Customer</class>-->
+        <!--<class>entities.Product</class>-->
+        <!--<class>entities.Command</class>-->
+
+
+        <class>entities.Exercice.Transporteur</class>
+        <class>entities.Exercice.Annonce</class>
+        <class>entities.Exercice.Arret</class>
+        <class>entities.Exercice.Personne</class>
+        <class>entities.Exercice.Ville</class>
+        <class>entities.Exercice.Destinataire</class>
+        <class>entities.Exercice.Expediteur</class>
+
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
@@ -32,4 +46,6 @@
 
 
     </persistence-unit>
+
+
 </persistence>

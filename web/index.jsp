@@ -27,6 +27,10 @@
 
 
 <body>
+
+    <html:link href="/strjpa/loadsignup.do">Sign Up</html:link><br/>
+    <html:link href="/strjpa/client.do">Client Action</html:link><br/>
+    <html:link href="/strjpa/InscriptionForm.jsp">Inscription</html:link>
 <%--<html:form method="post" action="/login">--%>
     <%--<fieldset>--%>
         <%--<legend>Connexion</legend>--%>

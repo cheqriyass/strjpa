@@ -8,6 +8,7 @@
     <form-beans type="org.apache.struts.action.ActionFormBean">
         <form-bean name="loginF" type="forms.loginForm"/>
         <form-bean name="SignUpF" type="forms.SignUpForm"/>
+        <form-bean name="InscForm" type="forms.Exercice.InscriptionFormBean"/>
 
     </form-beans>
 
@@ -25,6 +26,21 @@
             <forward name="error" path="/error.jsp" redirect="false"/>
         </action>
 
+        <action path="/sinscrir" type="servlets.Exercice.InscriptionAction" name="InscForm"
+                scope="session" input="/InscriptionForm.jsp">
+            <forward name="succes" path="/inscriptionSucces.jsp" redirect="false"/>
+            <forward name="error" path="/error.jsp" redirect="false"/>
+        </action>
+
+        <!--<action path="/Welcome" type="servlets.loadSignupForm" parameter="SignUpFormView.jsp"/>-->
+
+        <action path="/loadsignup" type="servlets.loadSignupForm">
+            <forward name="succes" path="/SignUpFormView.jsp" redirect="true" />
+        </action>
+
+        <action path="/client" type="servlets.clientAction">
+            <forward name="succes" path="/succes.jsp" redirect="true" />
+        </action>
     </action-mappings>
 
     <message-resources parameter="Messages" null="false"/>

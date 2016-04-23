@@ -17,6 +17,7 @@
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
           <element id="library" level="project" name="struts-struts (2)" />
+          <element id="library" level="project" name="jstl" />
         </element>
       </element>
     </root>
